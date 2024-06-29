@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume -  Wenao Yao</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('resume.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content:safe;
+            height: 100vh;
+            /* width: 1550px; */
+            /* height: 700px; */
+        }
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(255, 132, 0);
+            border-radius: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration:double;
+            color: #333;
+            font-size: 16px;
+        }
+        .hero {
+            margin-top: 20px;
+            padding: 100px 20px;
+            color: #333;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin: 20px 0 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .skill {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .skill .image-container {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease;
+        }
+        .skill .overlay {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgb(255, 132, 0);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: left 0.5s ease;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .skill:hover .overlay {
+            left: 0;
+        }
+        .social-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        .social-links a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .social-links img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        
+        #contact-toggle {
+            display: none;
+        }
+        .contact-form {
+            position: fixed;
+            right: -500px;
+            top: 0;
+            width: 400px;
+            height: 100%;
+            background-color: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            transition: right 0.3s ease;
+            z-index: 1000;
+        }
+        #contact-toggle:checked ~ .contact-form {
+            right: 0;
+            background-color:aqua;
+        }
+        .contact-form h2 {
+            margin-top: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #01d0ff;
+            color: gold;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color:cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="contact-toggle" />
+    <div class="social-links">
+        <a href="#" onclick="alert('全网唯一认证本帅QQ号：780628699')"><img src="wechat.jpg" alt="WeChat">WeChat</a>
+        <a href="#"><img src="facebook.png" alt="Facebook">Facebook</a>
+        <a href="#"><img src="ins.jpg" alt="Instagram">Instagram</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>你好 我是姚文奡(ào)</h1>
+            <ul class="nav">
+                <li><a href="#">Cases</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="姚文奡(中文)(1).pdf" target="_blank">Resume</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><label for="contact-toggle">Contact</label></li>
+            </ul>
+        </div>
+        <div class="hero">
+            <h2>Do Not Go Gentle into That Good Night</h2>
+            <p>Do not go gentle into that good night,<br>
+                Old age should burn and rave at close of day;<br>
+                Rage, rage against the dying of the light.<br></p>
+                <br>
+            <br>            
+        </div>
+        <h1>我会什么?</h1>
+        <div class="skills">
+            <div class="skill">
+                <div class="image-container" style="background-image: url('看书.jpg');"></div>
+                <div class="overlay">看书</div>
+            </div>
+            <div class="skill">
+                <div class="image-container" style="background-image: url('写字.jpg');"></div>
+                <div class="overlay">写字</div>
+            </div>
+            <div class="skill">
+                <div class="image-container" style="background-image: url('看电视.jpg');"></div>
+                <div class="overlay">看电视</div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-phone"></i> 19935100505</p>
+        <p><i class="fas fa-envelope"></i> 780628699@qq.com</p>
+        <form>
+            <input type="text" placeholder="* Your Name" required>
+            <input type="email" placeholder="* Your Email" required>
+            <textarea placeholder="* Your Message" required></textarea>
+            <button type="submit">Send Mail</button>
+        </form>
+        <label for="contact-toggle" class="close-contact-form" position = 'left'>&times;</label>
+    </div>
+    <label for="contact-toggle" id="contact-toggle-label">Contact</label>
+
+</body>
+</html>
